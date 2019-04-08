@@ -147,6 +147,10 @@ module Bundler
       sorted.each(&b)
     end
 
+    def select(&b)
+      @specs.select(&b)
+    end
+
   private
 
     def sorted
